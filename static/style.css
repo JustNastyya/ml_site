@@ -1,0 +1,215 @@
+body {
+  background-color: white;
+  margin: 0%;
+  padding: 0;
+  z-index: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.centered, .centered_contact_me, .cool_project_name {
+  color: white;
+  text-align: center;
+  font-size: 2.4vw;
+  font-family: 'Arial Black', Gadget, sans-serif;
+  position: absolute;
+  top: 20vw;
+  left: 50vw;
+  transform: translate(-50%, -50%)
+}
+
+.centered_contact_me {
+  font-size: 3vw;
+}
+
+.cool_project_name {
+  top: 19vw;
+  font-size: 3vw;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  margin: 0%;
+}
+
+header {
+  background-color: black;
+  position: absolute;
+}
+
+#the_head {
+  background-color: black;
+  padding: 2%;
+  margin: 0%;
+  position: sticky;
+  width: 100%;
+  top: 0; 
+  overflow: hidden;
+  display: block;
+  z-index: 100;
+}
+
+#button_home, #button_cont, #site_name{
+  background-color: black;
+  color: white;
+  font-family: 'Arial Black', Gadget, sans-serif;
+  position: absolute;
+  font-size: 1vw;
+  top: 1.3vw;
+  left: 75vw;
+}
+
+#button_cont {
+  left: 80vw;
+}
+
+button {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#button_vk, #button_gmail {
+  background-size: 10vw;
+  background-color: white;
+  color: black;
+  font-family: 'Arial Black', Gadget, sans-serif;
+  position: absolute;
+  font-size: 1vw;
+  top: 8vw;
+  left: 20vw;
+  text-align: center;
+  padding: 1vw 1vw 1vw 1vw;
+  width: 25em;
+}
+
+#button_gmail {
+  left: 53vw;
+}
+
+#button_text_vk, #button_text_gmail {
+  position: absolute;
+  text-align: center;
+  top: 1.9vw;
+  left: 4.7vw;
+}
+
+#button_text_gmail {
+  left: 5.7vw;
+}
+
+#site_name {
+  left: 4vw;
+}
+
+.cool {
+  margin: 0% 0% 0% 0%;
+}
+
+.row {
+  margin: 2vw 15vw 10vw 15vw;
+  padding: 5vw 10vw 20vw 10vw;
+}
+
+p {
+  margin: 1vw;
+}
+
+/********** Large devices only **********/
+@media (min-width: 600px) {
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4 {
+      float: left;
+      border: 1px solid black;
+      padding: 5vw;
+      background-color: white;
+      margin: 0.5vw;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.25vw;
+    }
+  .col-lg-1 {
+    width: 45%;
+  }
+  .col-lg-2 {
+    width: 45%;
+  }
+  .col-lg-3 {
+    width: 45%;
+  }
+  .col-lg-4 {
+    width: 45%;
+  }
+  .project_icons {
+    margin: 5vw 15vw 40vw 15vw;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 100px) and (max-width: 599px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4 {
+    float: left;
+    border: 1px solid black;
+    padding: 5vw;
+    margin: 0.5vw;
+    background-color: white;
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .col-md-1 {
+    width: 95%;
+  }
+  .col-md-2 {
+    width: 95%;
+  }
+  .col-md-3 {
+    width: 95%;
+  }
+  .col-md-4 {
+    width: 95%;
+  }
+  .project_icons {
+    margin: 5vw 15vw 70vw 15vw;
+  }
+  }
+
+
+.project_icons {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vw;
+  text-align: center;
+  background-size: 10vw;
+  position: relative;
+  background-color: white;
+  font-family: 'Arial Black', Gadget, sans-serif;
+  color: black;
+}
+
+
+.contact_info {
+  background-color: white;
+  padding: 10vw;
+  color: black;
+  text-align: center;
+  font-size: 1.5vw;
+  font-family: 'Arial Black', Gadget, sans-serif;
+  position: relative;
+}
+
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+footer {
+  background-color: black;
+  color: white;
+  font-family: 'Arial Black', Gadget, sans-serif;
+  font-size: 1vw;
+  padding: 3vw;
+  text-align: center;
+  position: relative;
+}

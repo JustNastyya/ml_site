@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="{{url_for('static', filename='style.css', v=0.01)}}" rel='stylesheet'>
+    </head>
+    <body>
+
+        <div id='the_head'>
+            <button id='button_home' type="button" autofocus>home</button>
+            <button type="button" onclick="window.location.href='{{ url_for('contact_me')}}';" id='button_cont'>contact me</button>
+            <div id='site_name'>ai_takes_over_the_world.com</div>
+        </div>
+
+        <div class="cool">
+            <img src="{{ url_for('static', filename='background_newrons.jpg' ) }}" width=100% height=100%>
+            <div class="centered">
+                <a> "None of us today know how to get computers to learn with the speed and flexibility of a child."</a>
+                <a> -&nbsp;Andrew&nbsp;Ng</a>    
+            </div>
+        </div>
+
+        <div class="project_icons">
+            <button onclick="window.location.href='{{ url_for('digits_recognition')}}';" type="button" class="col-lg-1 col-md-1"><p>Digits recognition</p></button>
+            <button class="col-lg-2 col-md-2"><p>Coming soon..</p></button>
+            <button class="col-lg-3 col-md-3"><p>Coming soon..</p></button>
+            <button class="col-lg-4 col-md-4"><p>Coming soon..</p></button>
+        </div>
+    </body>
+
+    <footer><small>&copy; Copyright 2020, Anastasiia Romanenko</small></footer>
+</html>

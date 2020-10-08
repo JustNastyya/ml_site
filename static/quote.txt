@@ -1,0 +1,3 @@
+"None of us today know how to get computers to learn with the speed and flexibility of a child."
+
+-Andrew Ng

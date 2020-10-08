@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="{{url_for('static', filename='style.css', v=0.01)}}" rel='stylesheet'>
+        <style>
+        #project_text_block {
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            margin: 3vw 30vw 2vw 25vw;
+            background-color: white;
+            font-size: 1.5vw;
+        }
+        .project_text {
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            margin: 0vw 30vw 2vw 25vw;
+            font-size: 1.5vw;
+            border: 1px solid black;
+        }
+        </style>
+    </head>
+    <body>
+        <div id='the_head'>
+            <button onclick="window.location.href='{{ url_for('home')}}';" id='button_home' type="button">home</button>
+            <button type="button" onclick="window.location.href='{{ url_for('contact_me')}}';" id='button_cont' autofocus>contact me</button>
+            <div id='site_name'>ai_takes_over_the_world.com</div>
+        </div>
+
+        <div class="cool">
+            <img src="{{url_for('static', filename='digits.png')}}" width=100% height=100%>
+            <div class="cool_project_name">
+                <a>Digits recognition</a>
+            </div>
+        </div>
+
+        <div id='project_text_block'>
+            <div>The number predicted with the highest probability: {{answer}}</div>
+        </div>
+
+        <button onclick="window.location.href='{{ url_for('digits_recognition')}}';" type="button" class='project_text'><p>Back</p></button>
+
+    </body>
+
+    <footer><small>&copy; Copyright 2020, Anastasiia Romanenko</small></footer>
+</html>

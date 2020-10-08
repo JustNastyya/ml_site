@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="{{url_for('static', filename='style.css', v=0.01)}}" rel='stylesheet'>
+    </head>
+    <body>
+
+        <div id='the_head'>
+            <button onclick="window.location.href='{{ url_for('home')}}';" id='button_home' type="button">home</button>
+            <button type="button" onclick="window.location.href='{{ url_for('contact_me')}}';" id='button_cont' autofocus>contact me</button>
+            <div id='site_name'>ai_takes_over_the_world.com</div>
+        </div>
+
+        <div class="cool">
+            <img src="{{ url_for('static', filename='background_newrons.jpg' ) }}" width=100% height=100%>
+            <div class="centered_contact_me">
+                <a>Contact me</a>    
+            </div>
+        </div>
+
+        <div class="contact_info">
+            <button id='button_vk' type="button">
+                <img src="{{ url_for('static', filename='vk_icon.png' ) }}" width=100% height=100%>
+                <a href="https://vk.com/aaaaaaaa_r" id='button_text_vk' target='_blank'>https://vk.com/aaaaaaaa_r</a>
+            </button>
+            
+            <button id='button_gmail' type="button">
+                <a href='mailto:druzhkoshowewed@gmail.com' id='button_text_gmail'>druzhkoshowewed@gmail.com</a>
+                <img src="{{ url_for('static', filename='gmail_icon.png' ) }}" width=100% height=100%>
+            </button>
+        </div>
+    </body>
+
+    <footer><small>&copy; Copyright 2020, Anastasiia Romanenko</small></footer>
+</html>

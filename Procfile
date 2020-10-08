@@ -1,0 +1,1 @@
+web: gunicorn atow:app --log-file - --log-level debug
